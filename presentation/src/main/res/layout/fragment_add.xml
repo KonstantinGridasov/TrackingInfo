@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.ghome.trackinginfo.add.AddFragmentViewModel" />
+    </data>
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fon_add"
+        android:orientation="vertical"
+        android:onClick="@{viewModel::onLayout}">
+
+        <TextView
+            style="@style/TextView"
+            android:gravity="center"
+            android:text="Введите данные" />
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/TextView"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_new"
+            android:hint="@string/hintName"
+            android:text='@={viewModel.name}' />
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/TextView"
+            android:layout_marginTop="5dp"
+            android:drawableStart="@drawable/ic_convert"
+            android:hint="@string/hintTrack"
+            android:text='@={viewModel.id}' />
+
+        <Button
+            style="@style/Button"
+            android:layout_gravity="end"
+            android:onClick="@{viewModel::buttonOK}"
+            android:text="@string/save" />
+
+
+    </LinearLayout>
+</layout>

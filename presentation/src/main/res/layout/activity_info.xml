@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewINFO"
+            type="com.example.ghome.trackinginfo.info.InfoViewModel" />
+    </data>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_app" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="@{viewINFO.name}" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="@{viewINFO.track}" />
+
+        <TextView
+            style="@style/TextView"
+            android:text="@{viewINFO.country}" />
+        <Button
+            style="@style/Button"
+            android:layout_gravity="end"
+            android:text="@string/Delete"
+            android:onClick="@{viewINFO::ClearOnRealm}"/>
+
+    </LinearLayout>
+</layout>

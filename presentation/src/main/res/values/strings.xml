@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TrackingInfo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hintName">Имя послыки</string>
+    <string name="hintTrack">Номер отслеживания</string>
+    <string name="save">Save</string>
+    <string name="Delete">Delete</string>
+    <string name="ClearAll">Очистить базу</string>
+    <string name="UbdateBase">Обновить базу</string>
+</resources>
+
